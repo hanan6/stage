@@ -1,5 +1,5 @@
 <?php 
-$pdo= new PDO('mysql::host=localhost;dbname=jeux_sequence','root','ce1mdpp');
+$pdo= new PDO('mysql:host=localhost;dbname=jeux_sequence','root','');
 $res=$pdo->query("select id_ins,nom_seq,sequence from sequences");
 $seq=array();
 
@@ -9,9 +9,9 @@ $seq=array();
 		     
 		
 		     
-	//foreach($seq as $element => $value)	     
+	foreach($seq as $element => $value)	     
 		     
-		//  echo $value;
+		 echo $value;
 		   
 		
 	
@@ -19,6 +19,5 @@ $seq=array();
 		//fwrite("MDP/instances/LEAP/leap_1.fasta",$_POST['textarea']);
 		//system("MDP/./build/MDP2 -i MDP/instances/LEAP/leap_1.fasta -o MDP/results/leap_1.xml -D 99 2>&1");
 	
-
 		
 		?>
