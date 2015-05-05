@@ -1,5 +1,6 @@
 <?php 
 $pdo= new PDO('mysql:host=localhost;dbname=jeux_sequence','root','');
+ //$pdo= new PDO('mysql::host=localhost;dbname=jeux_sequence','root','ce1mdpp');
 $res=$pdo->query("select id_ins,nom_seq,sequence from sequences");
 $seq=array();
 
