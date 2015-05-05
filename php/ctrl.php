@@ -5,21 +5,13 @@ $seq=array();
 
 	while($tab=$res->fetch(PDO::FETCH_NUM)){
 
-		     array_push($seq, ">$tab[1]_$tab[0] </br> $tab[2] </br>") ; }
+		     array_push($seq, "$tab[1]_$tab[0] $tab[2]") ; }
 		     
 		
 		     
 	foreach($seq as $element => $value)	     
 		     
 		  echo $value;
-		   
-		
-
-       
-	     /* $monfichier= fopen("MDP/instances/LEAP/leap_1.fasta",'w');
-		fwrite($monfichier,$_POST['textarea']);
-		system("MDP/./build/MDP2 -i MDP/instances/LEAP/leap_1.fasta -o MDP/results/leap_1.xml -D 99 2>&1");
-*/	
 
 		
 		?>

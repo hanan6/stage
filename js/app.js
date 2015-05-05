@@ -11,20 +11,19 @@ angular.module('mdp-v', [])
     $scope.fetch = function() {
 
       
-      
       $http({method: $scope.method, url: $scope.url,}).
         success(function(data) {
           
           $scope.data = data;
           // alert (data);
-
-          ;
-          alert(document.getElementById('mypre').firstChild.nodeName)
+          document.getElementById('mytextarea').firstChild.nodeValue = "";
         }).
         error(function(data, status) {
           $scope.data = data || "Request failed";
           $scope.status = status;
       });
+
+
     };
     // ------------------Fin - Fonction appellée lors du click sur le button Exemple1--------
 
@@ -33,6 +32,7 @@ angular.module('mdp-v', [])
     // ------------------Debut - Fonction qui permet de vider le TextArea--------
     $scope.clear = function() {
        document.getElementById('mytextarea').value = "";
+       location.reload();
     };
     // ------------------Fin - Fonction qui permet de vider le TextArea--------
 
