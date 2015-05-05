@@ -1,9 +1,9 @@
 angular.module('mdp-v', [])
-.controller('mdp-c', ['$scope', '$http', '$templateCache',
-  function($scope, $http, $templateCache) {
+.controller('mdp-c', ['$scope', '$http', 
+  function($scope, $http) {
     $scope.method = 'GET';
     // ------------------Debut - On spécifie l url de notre fichier PHP--------
-    $scope.url = 'http://localhost/projet%20hanan/php/ctrl.php';
+    $scope.url = 'http://localhost/stage/php/ctrl.php';
     // ------------------Fin - On spécifie l url de notre fichier PHP--------
 
 
@@ -17,6 +17,9 @@ angular.module('mdp-v', [])
           
           $scope.data = data;
           // alert (data);
+
+          ;
+          alert(document.getElementById('mypre').firstChild.nodeName)
         }).
         error(function(data, status) {
           $scope.data = data || "Request failed";
