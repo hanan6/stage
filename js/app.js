@@ -1,0 +1,37 @@
+angular.module('mdp-v', [])
+.controller('mdp-c', ['$scope', '$http', '$templateCache',
+  function($scope, $http, $templateCache) {
+    $scope.method = 'GET';
+    // ------------------Debut - On spécifie l url de notre fichier PHP--------
+    $scope.url = 'http://localhost/projet%20hanan/php/ctrl.php';
+    // ------------------Fin - On spécifie l url de notre fichier PHP--------
+
+
+    // ------------------Debut - Fonction appellée lors du click sur le button Exemple1--------
+    $scope.fetch = function() {
+
+      
+      
+      $http({method: $scope.method, url: $scope.url,}).
+        success(function(data) {
+          
+          $scope.data = data;
+          // alert (data);
+        }).
+        error(function(data, status) {
+          $scope.data = data || "Request failed";
+          $scope.status = status;
+      });
+    };
+    // ------------------Fin - Fonction appellée lors du click sur le button Exemple1--------
+
+    
+
+    // ------------------Debut - Fonction qui permet de vider le TextArea--------
+    $scope.clear = function() {
+       document.getElementById('mytextarea').value = "";
+    };
+    // ------------------Fin - Fonction qui permet de vider le TextArea--------
+
+
+  }]);

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html ng-app>
+<html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>MDP</title>
@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		
 	</head>
-	<body>
+	<body ng-app="mdp-v" ng-controller="mdp-c">
 		<!-- --------------------------------Debut - Barre de Navigation---------------------------- -->
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
@@ -48,7 +48,7 @@
 								<li><label class="checkbox"><input type="checkbox"> Option 1</label></li>&nbsp&nbsp
 								<li><label class="checkbox"><input type="checkbox"> Option 2</label></li>&nbsp&nbsp
 								<li><label class="checkbox"><input type="checkbox"> Option 3</label></li>&nbsp&nbsp
-								<li><label class="checkbox"><input type="checkbox"> Option 4</label></li>&nbsp&nbsp							
+								<li><label class="checkbox"><input type="checkbox"> Option 4</label></li>&nbsp&nbsp
 							</ul>
 							
 							
@@ -61,17 +61,17 @@
 								
 								<ul class="list-inline">
 									
-									<li><button name="exemple1"  class="btn btn-info">exemple1</button></li>
+									<li><button name="exemple1"  class="btn btn-info" ng-click="fetch()">exemple1</button></li>
 									<li><button name="exemple2"  class="btn btn-info">exemple2</button></li>
 									<li><button name="exemple3"  class="btn btn-info">exemple3</button></li>
 									<li><button name="exemple4"  class="btn btn-info">exemple4</button></li>
 									
 								</ul>
-								<textarea name="textarea" rows="10" cols="50" class="form-control" >{{tett}}</textarea>
+								<textarea id="mytextarea" name="textarea" rows="10" cols="50" class="form-control" >{{data}}</textarea>
 								<p></p>
 								<ul class="list-inline">
-									<button type="button" class="btn btn-success">Run MDP</button>
-									<button type="button" class="btn btn-danger">Effacer</button>
+									<button type="button" class="btn btn-success" >Run MDP</button>
+									<button type="button" class="btn btn-danger" ng-click="clear()">Effacer</button>
 									
 								</ul>
 							</div>
@@ -115,7 +115,9 @@
 				
 				
 				<script src="js/angular.min.js" type="text/javascript"></script>
-				<script src="js/bootstrap.min.js" type="text/javascript"></script>
+				<script src="js/app.js" type="text/javascript"></script>
+				<!-- <script src="js/bootstrap.min.js" type="text/javascript"></script> -->
+				
 				
 			</body>
 		</html>
