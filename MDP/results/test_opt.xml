@@ -1,0 +1,101 @@
+<mdp>
+	<class name="A1">
+		<satisfied val ="true" />
+		<nbPos val="10" />
+		<nbNeg val="20" />
+		<minPos val="500" />
+		<maxPos val="500" />
+		<minNeg val="500" />
+		<maxNeg val="500" />
+		<motif>
+			<card val="7" />
+			<excl val="0" />
+			<slack val="1" />
+			<patterns>
+				<pattern>AAA.D</pattern>
+				<pattern>EEE.C</pattern>
+				<pattern>C.E</pattern>
+				<pattern>D.J</pattern>
+				<pattern>E.G</pattern>
+				<pattern>H.J</pattern>
+				<pattern>CH</pattern>
+		</patterns>
+		</motif>
+		<sequences>
+			<sequences name="seq_1">335 440 133 19 210 22 79 </sequences>
+			<sequences name="seq_2">304 363 70 168 36 52 50 </sequences>
+			<sequences name="seq_3">373 53 152 146 6 91 26 </sequences>
+			<sequences name="seq_4">375 18 4 24 217 66 172 </sequences>
+			<sequences name="seq_5">325 443 33 24 136 153 198 </sequences>
+			<sequences name="seq_6">495 369 231 29 69 232 72 </sequences>
+			<sequences name="seq_7">198 373 14 87 16 153 149 </sequences>
+			<sequences name="seq_8">373 11 65 152 329 47 211 </sequences>
+			<sequences name="seq_9">373 160 239 72 44 23 22 </sequences>
+			<sequences name="seq_10">332 309 67 17 169 208 115 </sequences>
+		</sequences>
+</class>
+	<class name="A2">
+		<satisfied val ="true" />
+		<nbPos val="10" />
+		<nbNeg val="20" />
+		<minPos val="500" />
+		<maxPos val="500" />
+		<minNeg val="500" />
+		<maxNeg val="500" />
+		<motif>
+			<card val="5" />
+			<excl val="0" />
+			<slack val="2" />
+			<patterns>
+				<pattern>C..C</pattern>
+				<pattern>G..H</pattern>
+				<pattern>G.H</pattern>
+				<pattern>AAK</pattern>
+				<pattern>FB</pattern>
+		</patterns>
+		</motif>
+		<sequences>
+			<sequences name="seq_1">131 374 27 476 58 </sequences>
+			<sequences name="seq_2">12 1 262 440 97 </sequences>
+			<sequences name="seq_3">301 108 179 267 335 </sequences>
+			<sequences name="seq_4">73 16 10 291 32 </sequences>
+			<sequences name="seq_5">176 137 138 37 40 </sequences>
+			<sequences name="seq_6">43 122 291 20 108 </sequences>
+			<sequences name="seq_7">59 36 216 486 159 </sequences>
+			<sequences name="seq_8">8 4 204 209 113 </sequences>
+			<sequences name="seq_9">106 68 441 158 59 </sequences>
+			<sequences name="seq_10">53 55 26 13 73 </sequences>
+		</sequences>
+</class>
+	<class name="A3">
+		<satisfied val ="true" />
+		<nbPos val="10" />
+		<nbNeg val="20" />
+		<minPos val="500" />
+		<maxPos val="500" />
+		<minNeg val="500" />
+		<maxNeg val="500" />
+		<motif>
+			<card val="3" />
+			<excl val="0" />
+			<slack val="2" />
+			<patterns>
+				<pattern>DD..CC</pattern>
+				<pattern>AAA.B</pattern>
+				<pattern>EEEE</pattern>
+		</patterns>
+		</motif>
+		<sequences>
+			<sequences name="seq_1">370 19 57 </sequences>
+			<sequences name="seq_2">435 122 112 </sequences>
+			<sequences name="seq_3">343 425 237 </sequences>
+			<sequences name="seq_4">124 2 444 </sequences>
+			<sequences name="seq_5">39 472 1 </sequences>
+			<sequences name="seq_6">414 35 383 </sequences>
+			<sequences name="seq_7">450 31 101 </sequences>
+			<sequences name="seq_8">16 477 297 </sequences>
+			<sequences name="seq_9">232 79 211 </sequences>
+			<sequences name="seq_10">93 297 32 </sequences>
+		</sequences>
+</class>
+</mdp>

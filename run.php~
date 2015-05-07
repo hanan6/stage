@@ -1,0 +1,9 @@
+<?php
+		
+$monfichier= fopen("MDP/instances/LEAP/leap_1.fasta",'w');
+fwrite($monfichier,$_POST['textarea']);		
+system("MDP/./build/MDP2 -i MDP/instances/LEAP/leap_1.fasta -o MDP/results/leap_1.xml -D 99 2>&1");
+
+
+		
+?>
