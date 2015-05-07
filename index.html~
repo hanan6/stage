@@ -21,7 +21,7 @@
 					<ul class="nav navbar-nav">
 						<li  ng-class="{ active:tab === 1 }"><a ng-click="tab = 1" href>Traitement des séquences FASTA</a></li>
 						<li  ng-class="{ active:tab === 2 }"><a ng-click="tab = 2" href>Résultats d'exécution</a></li>
-						<li  ng-class="{ active:tab === 3 }"><a ng-click="tab = 3" href>Les Graphes</a></li>
+						<li  ng-class="{ active:tab === 3 }"><a ng-click="tab = 3" href>Statistique</a></li>
 						<li  ng-class="{ active:tab === 4 }"><a ng-click="tab = 4" href>4eme Fonctionalité</a></li>
 						<li  ng-class="{ active:tab === 5 }"><a ng-click="tab = 5" href>5eme Fonctionalité</a></li>
 					</div>
@@ -33,7 +33,7 @@
 				
 				<div class="panel" ng-show="tab ===1">
 					<div class="container">
-						<center>
+						
 						
 						<div class="well well-sm">
 							Le programme MDP permet de rechercher des  c-blocs  communs (sous-chaines, sous-suites, pures ou dégénérées...) d'acides aminés au sein de classes de séquences FASTA et plus généralement des c-blocs dans des fichiers au format  ECIF . Voux pouvez utiliser le formulaire ci-dessous pour le tester. L'aide sur les options est  là .
@@ -43,13 +43,13 @@
 						<fieldset>
 							<div align="left"><legend><span class="glyphicon glyphicon-cog"></span>&nbspOptions Avancées</legend></div>
 							
-							<ul class="list-inline">
+							<center><ul class="list-inline">
 								
 								<li><label class="checkbox"><input type="checkbox"> Option 1</label></li>&nbsp&nbsp
 								<li><label class="checkbox"><input type="checkbox"> Option 2</label></li>&nbsp&nbsp
 								<li><label class="checkbox"><input type="checkbox"> Option 3</label></li>&nbsp&nbsp
 								<li><label class="checkbox"><input type="checkbox"> Option 4</label></li>&nbsp&nbsp
-							</ul>
+							</ul></center>
 							
 							
 							<p></p></fieldset><fieldset><legend></legend></fieldset>
@@ -57,26 +57,26 @@
 							
 							
 							<!-- --------------------------------Fin - Option Avancées------------------------------ -->
-							<form  method="post" enctype="multipart/form-data"  >
+							<form   method="post" enctype="multipart/form-data"  >
 								
-								<ul class="list-inline">
+								<center><ul class="list-inline">
 									
 									<li><button name="exemple1"  class="btn btn-info" ng-click="fetch()">exemple1</button></li>
 									<li><button name="exemple2"  class="btn btn-info">exemple2</button></li>
 									<li><button name="exemple3"  class="btn btn-info">exemple3</button></li>
 									<li><button name="exemple4"  class="btn btn-info">exemple4</button></li>
 									
-								</ul>
+								</ul></center>
 								<textarea id="mytextarea" name="textarea" rows="10" cols="50" class="form-control" >{{data}}</textarea>
+								
 								<p></p>
-								<ul class="list-inline">
-									<button type="button" class="btn btn-success">Run MDP</button>
+								<center><ul class="list-inline">
+									<button type="button" class="btn btn-success" ng-click="run()">Run MDP</button>
 									<button type="button" class="btn btn-danger" ng-click="clear()">Effacer</button>
 									
-								</ul>
+								</ul></center>
 							</div>
 						</form>
-						</center>
 					</div>
 				</div>
 				<!-- --------------------------------Fin -Traitement des séquences FASTA----------------------------------- -->
