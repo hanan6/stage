@@ -1,0 +1,34 @@
+.spacer {
+	margin-top: 80px;
+}
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #428BCA;
+  color: #ffffff;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.colico{
+	width: 3%;
+}
+
+.colnom{
+	width: 10%;
+}
+.col{
+	width: 20%;
+}
+
+.coletat{
+	width: 10%;
+}
+
+
+
+
+
+
