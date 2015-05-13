@@ -8,14 +8,18 @@ angular.module('mdp-v', [])
 
 
     // ------------------Debut - Fonction appellée lors du click sur le button Exemple1--------
-    $scope.fetch = function() {
+    $scope.fetch = function($window) {
 
       
       $http({method: $scope.method, url: $scope.url,}).
         success(function(data) {
           
           $scope.data = data;
-          // alert (data);
+        
+
+         $window.open('//facebook.com');
+  };
+});
         
         }).
         error(function(data, status) {
@@ -26,7 +30,7 @@ angular.module('mdp-v', [])
 
     };
     // ------------------Fin - Fonction appellée lors du click sur le button Exemple1--------
-
+    
     
 
     // ------------------Debut - Fonction qui permet de vider le TextArea--------
@@ -39,7 +43,7 @@ angular.module('mdp-v', [])
     // ------------------Fin - Fonction qui permet de vider le TextArea--------
 
 
-    // ------------------Debut - Fonction qui permet de lancer lorcs du click sur le button run mdp--------
+    // ------------------Debut - Fonction qui permet de lancer lors du click sur le button run mdp--------
 
              $scope.run = function() {
               
@@ -52,9 +56,21 @@ angular.module('mdp-v', [])
 
                                      };
      // ------------------Fin - Fonction du run mdp--------
+    
+
+
+         
+              
+          
+
 
 
     
-      
+     
 
   }]);
+
+
+
+
+

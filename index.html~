@@ -10,6 +10,8 @@
 		
 	</head>
 	<body ng-app="mdp-v" ng-controller="mdp-c">
+      
+      
 		<!-- --------------------------------Debut - Barre de Navigation---------------------------- -->
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
@@ -45,10 +47,8 @@
 							
 							<center><ul class="list-inline">
 								
-								<li><label class="checkbox"><input type="checkbox"> Option 1</label></li>&nbsp&nbsp
-								<li><label class="checkbox"><input type="checkbox"> Option 2</label></li>&nbsp&nbsp
-								<li><label class="checkbox"><input type="checkbox"> Option 3</label></li>&nbsp&nbsp
-								<li><label class="checkbox"><input type="checkbox"> Option 4</label></li>&nbsp&nbsp
+								<li></li>
+								
 							</ul></center>
 							
 							
@@ -85,6 +85,19 @@
 					<div class="container">
 						<div class="spacer"></div>
 						<h1>Résultats d'exécution</h1>
+                                                
+                        <a ng-href="http://localhost/stage/php/res.php">Visualiser les résultats</a>
+
+
+                                                                                  
+				
+
+                                             
+
+                                               
+                                                
+
+                                                  
 					</div>
 				</div>
 				<!-- --------------------------------Fin - Résultats d'exécution------------------------------ -->
@@ -112,12 +125,13 @@
 					</div>
 				</div>
 				<!-- --------------------------------Fin - 5eme Fonctionalité------------------------------ -->
-				
+				   
 				
 				<script src="js/angular.min.js" type="text/javascript"></script>
 				<script src="js/app.js" type="text/javascript"></script>
 				<!-- <script src="js/bootstrap.min.js" type="text/javascript"></script> -->
 				
 				
-			</body>
-		</html>
+			</body>   
+		</html>   
+

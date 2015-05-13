@@ -2,28 +2,62 @@
 	<class name="1">
 		<satisfied val ="false" />
 		<nbPos val="3" />
-		<nbNeg val="8" />
+		<nbNeg val="12" />
 		<shortesPos val="22" />
-		<longestPos val="24" />
-		<shortestNeg val="9" />
-		<longestNeg val="26" />
+		<longestPos val="40" />
+		<shortestNeg val="3" />
+		<longestNeg val="32" />
 </class>
 	<class name="2">
 		<satisfied val ="false" />
 		<nbPos val="3" />
-		<nbNeg val="8" />
+		<nbNeg val="12" />
 		<shortesPos val="24" />
-		<longestPos val="26" />
-		<shortestNeg val="9" />
-		<longestNeg val="24" />
+		<longestPos val="32" />
+		<shortestNeg val="3" />
+		<longestNeg val="40" />
 </class>
 	<class name="3">
 		<satisfied val ="false" />
-		<nbPos val="5" />
-		<nbNeg val="6" />
-		<shortesPos val="9" />
-		<longestPos val="10" />
-		<shortestNeg val="22" />
-		<longestNeg val="26" />
+		<nbPos val="3" />
+		<nbNeg val="12" />
+		<shortesPos val="17" />
+		<longestPos val="18" />
+		<shortestNeg val="3" />
+		<longestNeg val="40" />
+</class>
+	<class name="4">
+		<satisfied val ="true" />
+		<nbPos val="4" />
+		<nbNeg val="11" />
+		<shortesPos val="24" />
+		<longestPos val="26" />
+		<shortestNeg val="3" />
+		<longestNeg val="40" />
+		<motif>
+			<card val="3" />
+			<nexcl val="0" />
+			<slack val="0" />
+			<patterns>
+				<pattern>MAMI</pattern>
+				<pattern>NTIN</pattern>
+				<pattern>PAPI</pattern>
+		</patterns>
+		</motif>
+		<sequences>
+			<sequences name="X2">11 19 3 </sequences>
+			<sequences name="X1">13 0 7 </sequences>
+			<sequences name="X3">7 21 13 </sequences>
+			<sequences name="X4">12 3 18 </sequences>
+		</sequences>
+</class>
+	<class name="5">
+		<satisfied val ="false" />
+		<nbPos val="2" />
+		<nbNeg val="13" />
+		<shortesPos val="3" />
+		<longestPos val="5" />
+		<shortestNeg val="17" />
+		<longestNeg val="40" />
 </class>
 </mdp>

@@ -16,11 +16,7 @@ angular.module('mdp-v', [])
           
           $scope.data = data;
           // alert (data);
-<<<<<<< HEAD
         
-=======
-          document.getElementById('mytextarea').firstChild.nodeValue = "";
->>>>>>> 54c0b7b4e27dd3bb89d7483f136351e70b1facbc
         }).
         error(function(data, status) {
           $scope.data = data || "Request failed";
@@ -36,7 +32,6 @@ angular.module('mdp-v', [])
     // ------------------Debut - Fonction qui permet de vider le TextArea--------
     $scope.clear = function() {
        document.getElementById('mytextarea').value = "";
-<<<<<<< HEAD
        //location.reload();
        document.location.reload(true);
     };
@@ -44,7 +39,7 @@ angular.module('mdp-v', [])
     // ------------------Fin - Fonction qui permet de vider le TextArea--------
 
 
-    // ------------------Debut - Fonction qui permet de lancer lorcs du click sur le button run mdp--------
+    // ------------------Debut - Fonction qui permet de lancer lors du click sur le button run mdp--------
 
              $scope.run = function() {
               
@@ -60,17 +55,11 @@ angular.module('mdp-v', [])
 
 
     
-      
+     
 
   }]);
-=======
-       location.reload();
-    };
-    // ------------------Fin - Fonction qui permet de vider le TextArea--------
 
 
-    
-      
 
-  }]);
->>>>>>> 54c0b7b4e27dd3bb89d7483f136351e70b1facbc
+
+
